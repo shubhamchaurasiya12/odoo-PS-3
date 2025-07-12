@@ -1,0 +1,123 @@
+/* Fonts & Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=League+Spartan:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+/* Dark overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Wrapper */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Card */
+.signup-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 320px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Profile Image Placeholder */
+.profile-pic-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.signup-form input::placeholder {
+  color: #ddd;
+}
+
+.signup-form button {
+  padding: 12px;
+  border: none;
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #e65c50;
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Optional Logo Top Left */
+.top-logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.logo-big {
+  height: 120px;
+  width: auto;
+  opacity: 0.95;
+}

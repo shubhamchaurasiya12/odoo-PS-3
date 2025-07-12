@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear – Sign Up</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="..\static\css\register.css" />
+</head>
+<body>
+
+  <!-- ✅ Logo in top left -->
+  <div class="top-logo">
+    <img src="..\static\Images\rewear_logo.png" class="logo-big" alt="ReWear Logo">
+  </div>
+
+  <div class="signup-wrapper">
+    <div class="signup-card">
+
+      <!-- Optional Profile Circle -->
+      <div class="profile-pic-placeholder"></div>
+
+      <form class="signup-form" method="POST" action="{{ url_for('auth.register') }}">
+        <input type="text" name="name" id="name" placeholder="Full Name" required>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+        <button type="submit" id="signupBtn">
+          Register
+          <span id="spinner" class="spinner" style="display: none;"></span>
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ✅ Bottom Modern Tagline -->
+  <div class="tagline">Join the <span>swap</span> revolution.</div>
+
+  <script src="..\static\JS\register.js"></script>
+</body>
+</html>

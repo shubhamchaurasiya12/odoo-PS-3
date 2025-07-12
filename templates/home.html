@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReWear – Home</title>
+  <link rel="stylesheet" href="..\static\css\home.css" />
+</head>
+<body>
+
+  <!-- Enhanced Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <span class="menu-icon">☰</span>
+      <div class="logo">
+        <img src="..\static\Images\image.png" alt="ReWear Logo">
+    
+      </div>
+    </div>
+
+    <div class="navbar-center">
+      <div class="search-wrapper">
+        <input type="text" placeholder="Search essentials, clothes and more..." />
+        <button class="search-icon">🔍</button>
+      </div>
+      <!-- <button class="view-toggle">☷</button> -->
+    </div>
+    
+    <div class="navbar-right">
+      <a style="text-decoration: none;" href="{{ url_for('auth.login') }}">
+        <div class="user-login">👤 Log in</div></a>
+
+      <a style="text-decoration: none;" href="{{ url_for('auth.register') }}">
+        <div class="user-login">👤 Sign up</div></a>      
+        
+      <a style="text-decoration: none;" href="#">
+        <div class="cart">🛒 Cart</div></a>
+    </div>
+</header>
+<!-- Hero Section -->
+
+<div class="carousel">
+  <div class="slides">
+    <img src="..\static\Images\Sharing is Easy.png" alt="Slide 1" class="slide">
+    <img src="..\static\Images\Sharing is Easy-2.png" alt="slide 2" class="slide">
+    <img src="..\static\Images\Sharing is Easy-3.png" alt="Slide 3" class="slide">
+  </div>
+  <div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<script src="..\static\JS\home.js"></script>
+
+  <!-- Category Navigation Bar -->
+  <!-- Icon-Based Category Section -->
+<section class="icon-category-bar">
+  <div class="icon-category">
+    <img src="..\static\Images\offer.png" alt="Top Offers" />
+    <span>Top Offers</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\tshirts.png" alt="T-Shirts & Tops
+" />
+    <span>T-Shirts & Tops
+</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\dresses.png" alt="dresses" />
+    <span>Dresses</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\paints.png" alt="Jeans & Bottoms" />
+    <span>Jeans & Bottoms</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\Jackets.png" alt="Jackets & Sweaters
+" />
+    <span>Jackets & Sweaters
+</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\footware.png" alt="Footwear
+" />
+    <span>Footwear
+</span>
+  </div>
+  <div class="icon-category">
+    <img src="..\static\Images\bags.png" alt="Bags & Backpacks
+" />
+    <span>Bags & Backpacks
+</span>
+  </div>
+
+  <div class="icon-category">
+    <img src="..\static\Images\latest.png" alt="latest" />
+    <span>Recently Added</span>
+  </div>
+</section>
+
+ <div class="carousel">
+  <div class="track">
+       <a href="" class="card">
+      <img src="..\static\Images\51GapqXHxrL.jpg" alt="Product 1">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\61fScC033bL._SY879_.jpg" alt="Product 2">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\71VcG9VD23L._SX679_.jpg" alt="Product 3">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\71R3PwGLbRL._SX679_.jpg" alt="Product 4">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\71VcG9VD23L._SX679_.jpg" alt="Product 5">
+      
+    </a>
+    <!-- Duplicate for seamless loop -->
+        <a href="" class="card">
+      <img src="..\static\Images\51GapqXHxrL.jpg" alt="Product 1">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\61L5P4o4v+L._SY695_.jpg" alt="Product 2">
+      
+    </a>
+    <a href="" class="card">
+      <img src="images/71S06vzZ5YL._SY879_.jpg" alt="Product 3">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\71S06vzZ5YL._SY879_.jpg" alt="Product 4">
+      
+    </a>
+    <a href="" class="card">
+      <img src="..\static\Images\71VcG9VD23L._SX679_.jpg" alt="Product 5">
+    </a>
+  </div>
+</div>
+<footer class="connect-footer">
+  <h2>Connect With Us</h2>
+  <div class="footer-links">
+    <div class="footer-item">
+      <i class="fab fa-instagram"></i>
+      <span>staggered_anmol</span>
+    </div>
+    <div class="footer-item">
+      <i class="fab fa-whatsapp"></i>
+      <span>8780938399</span>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-envelope"></i>
+      <span>anmolkumarchauhan7717@gmail.com</span>
+    </div>
+    <div class="footer-item">
+      <i class="fas fa-phone"></i>
+      <span>+91 8780938399</span>
+    </div>
+  </div>
+</footer>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+</footer>
+  <!-- Footer -->
+  <footer class="footer2">
+    <p>© 2025 CarbonTracker. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
